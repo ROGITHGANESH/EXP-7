@@ -1,4 +1,6 @@
 # Experiment 7: AI-Powered Smart Contract for Decentralized Negotiation
+# NAME:T.KAVINAJAI
+# REGISTER NUMBER:212223100020
 # Aim:
 # To create a smart contract that integrates AI logic for automated negotiation in decentralized commerce. The contract adjusts price and conditions dynamically based on real-time market trends using an on-chain AI model.
 
@@ -86,9 +88,7 @@ contract AIPoweredNegotiation {
     function dynamicPricing(uint256 base, uint256 min, uint256 max, uint256 offer) private pure returns (uint256) {
         if (offer >= max) return max;
         if (offer >= base) return base;
-        uint256 counter =(base+offer)/2;
-        return counter < min ? min : counter; // Enforce a Minimum bound
-        
+        return (base + offer) / 2; // Simple AI-based counteroffer logic
     }
 }
 ```
@@ -101,6 +101,8 @@ If the buyer’s offer is fair, the deal is executed.
 
 
 If the offer is too low, the contract suggests a counteroffer.
+<img width="1916" height="1022" alt="image" src="https://github.com/user-attachments/assets/2518093b-43d5-4c62-b956-e428feffde68" />
+
 
 
 
@@ -115,7 +117,7 @@ Can be extended to AI oracles for real-time market data.
 
 
 Inspired by AI-enhanced commerce and eBay-like decentralized auctions.
-
+<img width="1917" height="1044" alt="image" src="https://github.com/user-attachments/assets/31dc1dce-13df-47ce-8e72-0b9333e21342" />
 # RESULT:
-
+THUS THE AI_POWERED SMART CONTRACT HAS BEEN EXECUTED SUCCESSFULLY
 
